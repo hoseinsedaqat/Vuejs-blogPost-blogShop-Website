@@ -1,4 +1,4 @@
-# simple-blogPost-Blog Shop
+# simple-blogPost-BlogShop
 
 ## Project setup
 ```
