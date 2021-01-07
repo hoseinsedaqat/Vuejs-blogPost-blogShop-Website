@@ -1,5 +1,7 @@
 # simple-blogPost-BlogShop
 
+This Project Use : Vue Cli - Vuex - VueRouter-Bootstrap and BootstrapVue
+
 ## Project setup
 ```
 npm install
@@ -24,4 +26,4 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
-This Project Use : Vue Cli - Vuex - VueRouter-Bootstrap and BootstrapVue
+
