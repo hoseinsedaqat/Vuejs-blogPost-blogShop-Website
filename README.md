@@ -1,4 +1,4 @@
-# simple-blog
+# simple-blogPost-Blog Shop
 
 ## Project setup
 ```
