@@ -12,6 +12,7 @@
               class="card-img-top img-fluid"
               style="height: 350px"
             />
+            <hr />
             <div class="card-body">
               <h5 class="card-title">Blog Post Pencil</h5>
               <p class="card-text">Price: 5 $</p>
@@ -25,12 +26,16 @@
                 class="col-md-3 mr-3 ml-1"
               />
               <a class="btn btn-primary" @click="pencil()">Add to Cart</a>
+              <router-link to="/Product/0" class="btn btn-dark d-block mt-2"
+                >Read More</router-link
+              >
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card">
             <img src="../assets/2.jpg" class="card-img-top img-fluid" />
+            <hr />
             <div class="card-body">
               <h5 class="card-title">Blog Post NoteBook</h5>
               <p class="card-text">Price: 10 $</p>
@@ -44,12 +49,16 @@
                 class="col-md-3 mr-3 ml-1"
               />
               <a class="btn btn-primary" @click="noteBook()">Add to Cart</a>
+              <router-link to="/Product/1" class="btn btn-dark d-block mt-2"
+                >Read More</router-link
+              >
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card">
             <img src="../assets/3.jpg" class="card-img-top img-fluid" />
+            <hr />
             <div class="card-body">
               <h5 class="card-title">Blog Post BackPack</h5>
               <p class="card-text">Price: 20 $</p>
@@ -63,6 +72,9 @@
                 class="col-md-3 mr-3 ml-1"
               />
               <a class="btn btn-primary" @click="backPack()">Add to Cart</a>
+              <router-link to="/Product/2" class="btn btn-dark d-block mt-2"
+                >Read More</router-link
+              >
             </div>
           </div>
         </div>

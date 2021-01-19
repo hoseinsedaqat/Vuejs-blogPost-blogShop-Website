@@ -12,13 +12,13 @@
           right
           html="<a style='color:white;'><i class='fas fa-user-alt mr-1 tag' style='color: white'></i> Hosein</a>"
         >
-          <b-dropdown-item href="#"
+          <b-dropdown-item to="/Message"
             ><i class="far fa-envelope-open mr-1"></i> Message</b-dropdown-item
           >
-          <b-dropdown-item href="#"
+          <b-dropdown-item to="/Setting"
             ><i class="fas fa-cog mr-1"></i> Setting</b-dropdown-item
           >
-          <b-dropdown-item href="#"
+          <b-dropdown-item to="/"
             ><i class="fa fa-sign-out mr-1"></i> Log Out</b-dropdown-item
           >
         </b-nav-item-dropdown>

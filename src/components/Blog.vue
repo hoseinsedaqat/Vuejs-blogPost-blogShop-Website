@@ -49,7 +49,7 @@ export default {
   methods: {
     ...mapActions(["deletedPost"]),
   },
-  mounted() {
+  created() {
     let numberofPost = this.data.length;
     this.counter = numberofPost;
   },
