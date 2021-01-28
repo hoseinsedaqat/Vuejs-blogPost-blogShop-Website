@@ -12,21 +12,31 @@
                 <label for="username">User Name:</label>
                 <input
                   type="text"
-                  name=""
-                  id=""
-                  v-model="username"
+                  name="username"
+                  id="username"
+                  :class="{ active: validatorName === 'invalid' }"
+                  v-model.trim="username"
+                  @blur="userNameValid"
                   class="form-control col-md-10"
                 />
+                <p class="text-danger" v-if="validatorName === 'invalid'">
+                  Enter a Valid User Name!
+                </p>
               </div>
               <div class="form-group">
                 <label for="password">Password:</label>
                 <input
                   type="password"
-                  name=""
-                  id=""
-                  v-model="password"
+                  name="password"
+                  id="password"
+                  :class="{ active: validatorPassword === 'invalid' }"
+                  v-model.trim="password"
                   class="form-control col-md-10"
+                  @blur="passwordValid"
                 />
+                <p class="text-danger" v-if="validatorPassword === 'invalid'">
+                  Enter your Password!
+                </p>
               </div>
               <button class="btn btn-info btn-block col-md-10" @click="validate()">
                 Login
@@ -51,6 +61,8 @@ export default {
       username: "",
       password: "",
       error: "Please Compeletd For Login!!",
+      validatorName: null,
+      validatorPassword: null,
     };
   },
   methods: {
@@ -63,6 +75,21 @@ export default {
       setTimeout(() => {
         document.querySelector(".error").style.display = "none";
       }, 2000);
+    },
+    // New Validate
+    userNameValid() {
+      if (this.username === "") {
+        this.validatorName = "invalid";
+      } else {
+        this.validatorName = "valid";
+      }
+    },
+    passwordValid() {
+      if (this.password === "") {
+        this.validatorPassword = "invalid";
+      } else {
+        this.validatorPassword = "valid";
+      }
     },
   },
 };
@@ -86,4 +113,9 @@ export default {
   width: 400px;
   display: none;
 }
+
+.active {
+  border: 1px solid red;
+}
 </style>
+
