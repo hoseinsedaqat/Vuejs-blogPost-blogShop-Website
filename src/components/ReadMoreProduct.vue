@@ -80,10 +80,7 @@ export default {
     },
     buyProduct() {
       // In any page on time page is mounted array is 0 is important key
-      const number = this.readMore[0]["number"];
-      const name = this.readMore[0]["name"];
-      const price = this.readMore[0]["price"];
-      const quantity = this.readMore[0]["quantity"];
+      const { name , number , price , quantity } = this.readMore[0]
       const product = {
         product: {
           name,
