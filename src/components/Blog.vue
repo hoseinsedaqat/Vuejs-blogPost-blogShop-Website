@@ -30,8 +30,7 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
-import { mapActions } from "vuex";
+import { mapState,mapActions } from "vuex";
 import Header from "./Header.vue";
 export default {
   name: "Blog",
