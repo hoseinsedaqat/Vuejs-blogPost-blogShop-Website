@@ -29,8 +29,7 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
-import { mapState } from "vuex";
+import { mapActions,mapActions } from "vuex";
 import Header from "./Header.vue";
 export default {
   name: "Home",
