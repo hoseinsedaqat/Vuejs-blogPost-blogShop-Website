@@ -8,7 +8,7 @@
       <div class="row">
         <div class="col-md-10 mx-auto">
           <h5 class="mb-4">
-            <span class="badge badge-dark">{{ counter }}</span> Posts:
+            <span class="badge badge-dark">{{ myCounterPost }}</span> Posts:
           </h5>
           <ul v-for="(post, index) in data" :key="(post, index)">
             <div class="panel">
@@ -30,27 +30,24 @@
 </template>
 
 <script>
-import { mapState,mapActions } from "vuex";
+import { mapState, mapActions } from "vuex";
 import Header from "./Header.vue";
 export default {
   name: "Blog",
   components: {
     "app-header": Header,
   },
-  data() {
-    return {
-      counter: 0,
-    };
-  },
   computed: {
     ...mapState(["data"]),
+    myCounterPost() {
+      let counter = 0;
+      let numberofPost = this.data.length;
+      counter += numberofPost;
+      return counter;
+    },
   },
   methods: {
     ...mapActions(["deletedPost"]),
-  },
-  created() {
-    let numberofPost = this.data.length;
-    this.counter = numberofPost;
   },
 };
 </script>
@@ -81,3 +78,4 @@ i {
   justify-content: center;
 }
 </style>
+
