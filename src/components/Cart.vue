@@ -2,10 +2,10 @@
   <div>
     <app-header></app-header>
     <div class="container mt-5">
-      <h3 class="mb-5">Card</h3>
       <p class="removeAtCart">{{ removeAtCart }}</p>
       <div class="row">
         <div class="col-md-10 mx-auto">
+          <h3 class="mb-5">Card</h3>
           <table class="table">
             <thead class="thead-dark">
               <tr>
@@ -22,7 +22,7 @@
                 <th>{{ index + 1 }}</th>
                 <td>
                   <img
-                    :src="require(`../assets/${cart.number + '.jpg'}`)"
+                    :src="`${cart.img}`"
                     class="img-fluid"
                     style="width: 50px; height: 30px"
                   />
@@ -41,7 +41,6 @@
             </tbody>
           </table>
           <hr class="bg-dark" />
-          <h3>Total Count:</h3>
           <p class="bg-light text-dark p-4">
             Total Count: <b>{{ totalCount }}$</b>
             <button class="btn btn-dark float-right">Payment</button>
@@ -54,7 +53,7 @@
 
 <script>
 import Header from "./Header.vue";
-import { mapState,mapActions } from "vuex";
+import { mapState, mapActions } from "vuex";
 export default {
   name: "Cart",
   data() {
@@ -92,3 +91,4 @@ export default {
   display: none;
 }
 </style>
+
