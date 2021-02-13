@@ -52,9 +52,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 :root {
-  --red-color: red;
+  --border-size: 5px;
 }
 
 ul {
@@ -64,13 +64,13 @@ ul {
 .panel {
   border: 1px solid #6666;
   padding: 2rem;
-  border-radius: 5px;
+  border-radius: var(--border-size);
   margin-bottom: 2rem;
 }
 
 i {
   cursor: pointer;
-  color: var(--red-color);
+  color: red;
 }
 
 .showcase {
@@ -84,4 +84,3 @@ i {
   justify-content: center;
 }
 </style>
-
