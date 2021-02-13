@@ -53,18 +53,24 @@ export default {
 </script>
 
 <style scoped>
+:root {
+  --red-color: red;
+}
+
 ul {
   list-style: none;
 }
+
 .panel {
   border: 1px solid #6666;
   padding: 2rem;
   border-radius: 5px;
   margin-bottom: 2rem;
 }
+
 i {
   cursor: pointer;
-  color: red;
+  color: var(--red-color);
 }
 
 .showcase {
