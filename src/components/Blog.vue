@@ -52,11 +52,7 @@ export default {
 };
 </script>
 
-<style>
-:root {
-  --border-size: 5px;
-}
-
+<style scoped>
 ul {
   list-style: none;
 }
@@ -64,7 +60,7 @@ ul {
 .panel {
   border: 1px solid #6666;
   padding: 2rem;
-  border-radius: var(--border-size);
+  border-radius: 5px;
   margin-bottom: 2rem;
 }
 
