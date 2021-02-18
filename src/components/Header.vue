@@ -2,24 +2,22 @@
   <div>
     <div id="header">
       <ul>
-        <router-link to="/Home" class="tag">Home</router-link>
-        <router-link to="/Blog" class="tag">Blog</router-link>
-        <router-link to="/Shop" class="tag">BlogShop</router-link>
-        <router-link to="/Cart" class="tag"
-          ><i class="fa fa-shopping-cart mr-1"></i> Cart</router-link
+        <router-link
+          v-for="(header, index) in headerData"
+          :key="(header, index)"
+          :to="`${header.toDirection}`"
+          class="tag"
+          >{{ header.text }}</router-link
         >
         <b-nav-item-dropdown
           right
           html="<a style='color:white;'><i class='fas fa-user-alt mr-1 tag' style='color: white'></i> Hosein</a>"
         >
-          <b-dropdown-item to="/Message"
-            ><i class="far fa-envelope-open mr-1"></i> Message</b-dropdown-item
-          >
-          <b-dropdown-item to="/Setting"
-            ><i class="fas fa-cog mr-1"></i> Setting</b-dropdown-item
-          >
-          <b-dropdown-item to="/"
-            ><i class="fa fa-sign-out mr-1"></i> Log Out</b-dropdown-item
+          <b-dropdown-item
+            v-for="(drop, index) in dropDownItems"
+            :key="(drop, index)"
+            :to="`${drop.dropDirection}`"
+            ><i :class="drop.dropClass"></i> {{ drop.dropText }}</b-dropdown-item
           >
         </b-nav-item-dropdown>
       </ul>
@@ -31,6 +29,33 @@
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      headerData: [
+        { toDirection: "/Home", text: "Home" },
+        { toDirection: "/Blog", text: "Blog" },
+        { toDirection: "/Shop", text: "BlogShop" },
+        { toDirection: "/Cart", text: "Cart" },
+      ],
+      dropDownItems: [
+        {
+          dropDirection: "/Setting",
+          dropClass: "far fa-envelope-open mr-1",
+          dropText: "Setting",
+        },
+        {
+          dropDirection: "/Message",
+          dropClass: "fas fa-cog mr-1",
+          dropText: "Message",
+        },
+        {
+          dropDirection: "/",
+          dropClass: "fa fa-sign-out mr-1",
+          dropText: "Log Out",
+        },
+      ],
+    };
+  },
 };
 </script>
 
