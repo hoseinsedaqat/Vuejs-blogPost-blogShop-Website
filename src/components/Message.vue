@@ -9,64 +9,21 @@
           <div class="card">
             <div class="card-header p-4">5 Contact</div>
             <ul class="list-group">
-              <li class="list-group-item m-0 d-flex flex-row justify-content-between p-3">
+              <li
+                class="list-group-item m-0 d-flex flex-row justify-content-between p-3"
+                v-for="(contact, index) in myContact"
+                :key="(contact, index)"
+              >
                 <img
-                  src="../assets/Dinesh_Chugtai.jpg"
+                  :src="contact.image"
                   alt=""
                   width="40"
                   height="40"
                   style="border-radius: 50%"
                 />
                 <p class="align-self-center">
-                  Denish <i class="fas fa-circle" style="color: #333"></i>
-                </p>
-              </li>
-              <li class="list-group-item m-0 d-flex flex-row justify-content-between p-3">
-                <img
-                  src="../assets/original.jpg"
-                  alt=""
-                  width="40"
-                  height="40"
-                  style="border-radius: 50%"
-                />
-                <p class="align-self-center">
-                  Richard <i class="fas fa-circle" style="color: green"></i>
-                </p>
-              </li>
-              <li class="list-group-item m-0 d-flex flex-row justify-content-between p-3">
-                <img
-                  src="../assets/Bertram_Gilfoyle.jpg"
-                  alt=""
-                  width="40"
-                  height="40"
-                  style="border-radius: 50%"
-                />
-                <p class="align-self-center">
-                  Gilfoyle <i class="fas fa-circle" style="color: #333"></i>
-                </p>
-              </li>
-              <li class="list-group-item m-0 d-flex flex-row justify-content-between p-3">
-                <img
-                  src="../assets/page-header.png"
-                  alt=""
-                  width="40"
-                  height="40"
-                  style="border-radius: 50%"
-                />
-                <p class="align-self-center">
-                  Jian Yang <i class="fas fa-circle" style="color: green"></i>
-                </p>
-              </li>
-              <li class="list-group-item m-0 d-flex flex-row justify-content-between p-3">
-                <img
-                  src="../assets/43a7d61519ec8605f47b32e45f62a813.jpg"
-                  alt=""
-                  width="40"
-                  height="40"
-                  style="border-radius: 50%"
-                />
-                <p class="align-self-center">
-                  Erlich <i class="fas fa-circle" style="color: green"></i>
+                  {{ contact.name }}
+                  <i class="fas fa-circle" :style="{ color: contact.color }"></i>
                 </p>
               </li>
             </ul>
@@ -112,9 +69,26 @@
 </template>
 
 <script>
+// import Images for Contact
+import denish from "../assets/Dinesh_Chugtai.jpg";
+import richard from "../assets/original.jpg";
+import gilfoyle from "../assets/Bertram_Gilfoyle.jpg";
+import jianyang from "../assets/page-header.png";
+import erlich from "../assets/43a7d61519ec8605f47b32e45f62a813.jpg";
 import Header from "./Header.vue";
 export default {
   name: "Message",
+  data() {
+    return {
+      myContact: [
+        { image: denish, name: "Denish", color: "#333" },
+        { image: richard, name: "Richard", color: "green" },
+        { image: gilfoyle, name: "Gilfoyle", color: "#333" },
+        { image: jianyang, name: "Jian Yang", color: "green" },
+        { image: erlich, name: "Erlich", color: "green" },
+      ],
+    };
+  },
   components: {
     "app-header": Header,
   },
