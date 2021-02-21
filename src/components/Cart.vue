@@ -9,10 +9,9 @@
           <table class="table">
             <thead class="thead-dark">
               <tr>
-                <th scope="col">Count</th>
-                <th scope="col">Product</th>
-                <th scope="col">Name</th>
-                <th scope="col">Price</th>
+                <th scope="col" v-for="colName in tableName" :key="(colName, index)">
+                  {{ colName.name }}
+                </th>
                 <th>Quantity</th>
                 <th></th>
               </tr>
@@ -59,6 +58,7 @@ export default {
   data() {
     return {
       removeAtCart: "Remove Product ",
+      tableName: [{ name: "Count" },{ name: "Product" },{ name: "Name" },{ name: "Price" }],
     };
   },
   components: {
@@ -91,4 +91,3 @@ export default {
   display: none;
 }
 </style>
-
