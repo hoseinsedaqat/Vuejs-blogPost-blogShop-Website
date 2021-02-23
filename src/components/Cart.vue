@@ -12,8 +12,7 @@
                 <th scope="col" v-for="colName in tableName" :key="(colName, index)">
                   {{ colName.name }}
                 </th>
-                <th>Quantity</th>
-                <th></th>
+                <th v-for="(withOutCol,index) in tableNameWithOutCol" :key="(withOutCol,index)">{{withOutCol.name}}</th>
               </tr>
             </thead>
             <tbody>
@@ -58,7 +57,8 @@ export default {
   data() {
     return {
       removeAtCart: "Remove Product ",
-      tableName: [{ name: "Count" },{ name: "Product" },{ name: "Name" },{ name: "Price" }],
+      tableName: [{ name: "Count" },{ name: "Product" },{ name: "Name" },{ name: "Price" },],
+      tableNameWithOutCol:[{name:'Quantity'},{name:''}]
     };
   },
   components: {
