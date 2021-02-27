@@ -5,7 +5,6 @@
     >
       <router-view></router-view>
     </transition>
-    <app-footer></app-footer>
   </div>
 </template>
 
