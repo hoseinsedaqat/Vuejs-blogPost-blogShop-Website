@@ -11,9 +11,6 @@
 <script>
 export default {
   name: "App",
-  components: {
-    "app-footer": Footer,
-  },
 };
 </script>
 
