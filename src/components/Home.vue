@@ -57,3 +57,6 @@ export default {
       myContent: false,
     };
   },
+computed: {
+    ...mapState(["data"]),
+  },
