@@ -57,10 +57,10 @@ export default {
       myContent: false,
     };
   },
-computed: {
+  computed: {
     ...mapState(["data"]),
   },
-methods: {
+  methods: {
     ...mapActions(["addPost"]),
     add() {
       const { id, title, text } = this.posts;
@@ -79,7 +79,7 @@ methods: {
       }
     },
   },
- mounted() {
+  mounted() {
     setTimeout(() => {
       this.myContent = true;
       this.mySpinner = false;
@@ -89,7 +89,6 @@ methods: {
 </script>
 
 <style scoped>
-
 #mySpinner {
   width: 100%;
   height: 100vh;
@@ -98,5 +97,5 @@ methods: {
   align-items: center;
   justify-content: center;
 }
-
 </style>
+
