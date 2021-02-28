@@ -85,3 +85,5 @@ methods: {
       this.mySpinner = false;
     }, 3000);
   },
+};
+</script>
