@@ -35,3 +35,25 @@
     </div>
   </div>
 </template>
+
+<script>
+import { mapActions, mapState } from "vuex";
+import Header from "./Header.vue";
+import Footer from "./Footer.vue";
+export default {
+  name: "Home",
+  components: {
+    "app-header": Header,
+    "app-footer": Footer,
+  },
+  data() {
+    return {
+      posts: {
+        id: "",
+        title: "",
+        text: "",
+      },
+      mySpinner: true,
+      myContent: false,
+    };
+  },
