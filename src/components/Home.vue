@@ -79,3 +79,9 @@ methods: {
       }
     },
   },
+ mounted() {
+    setTimeout(() => {
+      this.myContent = true;
+      this.mySpinner = false;
+    }, 3000);
+  },
