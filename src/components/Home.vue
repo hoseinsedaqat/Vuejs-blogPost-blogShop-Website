@@ -60,3 +60,22 @@ export default {
 computed: {
     ...mapState(["data"]),
   },
+methods: {
+    ...mapActions(["addPost"]),
+    add() {
+      const { id, title, text } = this.posts;
+      const posts = {
+        post: {
+          id,
+          title,
+          text,
+        },
+      };
+      if (title === "" || text === "") {
+        alert("Are you sure completed ?");
+      } else {
+        this.addPost(posts);
+        (this.posts.title = ""), (this.posts.text = "");
+      }
+    },
+  },
