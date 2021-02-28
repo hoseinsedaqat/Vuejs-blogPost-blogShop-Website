@@ -87,3 +87,4 @@ methods: {
   },
 };
 </script>
+<style scoped>
