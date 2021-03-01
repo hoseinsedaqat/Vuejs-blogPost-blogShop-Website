@@ -47,9 +47,19 @@ export default {
     "app-header": Header,
     "app-footer": Footer,
   },
-data() {
+  data() {
     return {
       mySpinner: true,
       myContent: false,
     };
+  },
+
+  computed: {
+    ...mapState(["data"]),
+    myCounterPost() {
+      let counter = 0;
+      let numberofPost = this.data.length;
+      counter += numberofPost;
+      return counter;
+    },
   },
