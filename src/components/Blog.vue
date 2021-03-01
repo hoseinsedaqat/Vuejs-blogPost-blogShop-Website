@@ -99,8 +99,6 @@ i {
   align-items: center;
   justify-content: center;
 }
-
-
 #mySpinner {
   width: 100%;
   height: 30vh;
