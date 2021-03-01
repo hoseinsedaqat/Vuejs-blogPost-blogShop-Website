@@ -89,3 +89,13 @@ i {
   cursor: pointer;
   color: red;
 }
+.showcase {
+  background: url("../assets/1513174401197_NotebookNotes_7730-xl.jpg") no-repeat center
+    center/cover;
+  height: 50vh;
+  color: #333;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
