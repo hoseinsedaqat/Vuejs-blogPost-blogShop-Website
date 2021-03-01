@@ -53,7 +53,6 @@ export default {
       myContent: false,
     };
   },
-
   computed: {
     ...mapState(["data"]),
     myCounterPost() {
@@ -74,6 +73,7 @@ export default {
   },
 };
 </script>
+
 <style scoped>
 ul {
   list-style: none;
@@ -84,11 +84,11 @@ ul {
   border-radius: 5px;
   margin-bottom: 2rem;
 }
-
 i {
   cursor: pointer;
   color: red;
 }
+
 .showcase {
   background: url("../assets/1513174401197_NotebookNotes_7730-xl.jpg") no-repeat center
     center/cover;
@@ -99,6 +99,7 @@ i {
   align-items: center;
   justify-content: center;
 }
+
 #mySpinner {
   width: 100%;
   height: 30vh;
