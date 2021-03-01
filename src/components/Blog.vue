@@ -84,3 +84,8 @@ ul {
   border-radius: 5px;
   margin-bottom: 2rem;
 }
+
+i {
+  cursor: pointer;
+  color: red;
+}
