@@ -41,3 +41,9 @@
 import { mapState, mapActions } from "vuex";
 import Header from "./Header.vue";
 import Footer from "./Footer.vue";
+export default {
+  name: "Blog",
+  components: {
+    "app-header": Header,
+    "app-footer": Footer,
+  },
