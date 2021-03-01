@@ -74,3 +74,13 @@ export default {
   },
 };
 </script>
+<style scoped>
+ul {
+  list-style: none;
+}
+.panel {
+  border: 1px solid #6666;
+  padding: 2rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
