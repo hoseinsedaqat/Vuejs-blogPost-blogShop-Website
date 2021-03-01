@@ -66,3 +66,9 @@ export default {
   methods: {
     ...mapActions(["deletedPost"]),
   },
+  mounted() {
+    setTimeout(() => {
+      this.mySpinner = false;
+      this.myContent = true;
+    }, 3000);
+  },
