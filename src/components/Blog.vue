@@ -63,3 +63,6 @@ export default {
       return counter;
     },
   },
+  methods: {
+    ...mapActions(["deletedPost"]),
+  },
