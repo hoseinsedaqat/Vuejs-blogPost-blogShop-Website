@@ -63,3 +63,10 @@ export default {
       myContent: false,
     };
   },
+  components: {
+    "app-header": Header,
+    "app-footer": Footer,
+  },
+  computed: {
+    ...mapState(["ProductData"]),
+  },
