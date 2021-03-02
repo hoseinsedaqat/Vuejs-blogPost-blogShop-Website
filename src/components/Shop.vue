@@ -70,3 +70,29 @@ export default {
   computed: {
     ...mapState(["ProductData"]),
   },
+  methods: {
+    ...mapActions(["Products"]),
+    BuyProduct(index) {
+      const { name, price, img, quantity } = this.ProductData[index];
+      const product = {
+        product: {
+          name,
+          price,
+          img,
+          quantity,
+        },
+      };
+      if (product.product.quantity < 1) {
+        alert("The Quantity of Product not Be Zero!!!");
+      } else {
+        this.Products(product);
+        this.timeOutforcart();
+      }
+    },
+    timeOutforcart() {
+      document.querySelector(".add").style.display = "block";
+      setTimeout(() => {
+        document.querySelector(".add").style.display = "none";
+      }, 3000);
+    },
+  },
