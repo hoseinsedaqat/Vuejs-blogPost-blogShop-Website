@@ -1,6 +1,4 @@
 <template>
-  <!-- Shop UI -->
-  <!-- Add Spinner For Ui -->
   <div>
     <app-header></app-header>
     <div class="container mt-4">
