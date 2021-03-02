@@ -49,3 +49,17 @@
     <app-footer></app-footer>
   </div>
 </template>
+
+<script>
+import Header from "./Header.vue";
+import Footer from "./Footer.vue";
+import { mapActions, mapState } from "vuex";
+export default {
+  name: "Shop",
+  data() {
+    return {
+      addtocart: "Add To Cart",
+      mySpinner: true,
+      myContent: false,
+    };
+  },
