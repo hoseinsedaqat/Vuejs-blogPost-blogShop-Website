@@ -96,3 +96,11 @@ export default {
       }, 3000);
     },
   },
+  mounted() {
+    setTimeout(() => {
+      this.mySpinner = false;
+      this.myContent = true;
+    }, 3000);
+  },
+};
+</script>
