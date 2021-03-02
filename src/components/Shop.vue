@@ -114,3 +114,12 @@ export default {
   width: 350px;
   display: none;
 }
+#mySpinner {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+</style>
