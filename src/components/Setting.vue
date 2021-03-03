@@ -51,4 +51,5 @@ export default {
       this.mySpinner = false;
       this.myContent = true;
     }, 3000);
-  },
+  },};
+</script>
