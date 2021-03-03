@@ -46,4 +46,9 @@ export default {
       mySpinner: true,
       myContent: false,
     };
+  }, mounted() {
+    setTimeout(() => {
+      this.mySpinner = false;
+      this.myContent = true;
+    }, 3000);
   },
