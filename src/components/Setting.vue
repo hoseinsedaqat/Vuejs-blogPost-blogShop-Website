@@ -31,3 +31,13 @@
     </div>
   </div>
 </template>
+
+<script>
+import Header from "./Header.vue";
+import Footer from "./Footer.vue";
+export default {
+  name: "Setting",
+  components: {
+    "app-header": Header,
+    "app-footer": Footer,
+  },
