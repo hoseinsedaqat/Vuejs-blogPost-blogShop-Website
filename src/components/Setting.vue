@@ -52,5 +52,5 @@ export default {
       this.myContent = true;
     }, 3000);
   },
-  };
+ };
 </script>
