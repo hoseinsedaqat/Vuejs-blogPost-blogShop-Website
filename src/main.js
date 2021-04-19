@@ -7,7 +7,7 @@ import Vuerouter from 'vue-router'
 // UI-BootstrapVue Added
 import BootstrapVue from 'bootstrap-vue'
 
-// Import Bootstarp for Use in All of Component (Global)
+// Import Bootstarp for Use in All Component (Global)
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
