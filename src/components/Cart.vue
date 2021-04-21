@@ -57,7 +57,7 @@ export default {
   data() {
     return {
       removeAtCart: "Remove Product ",
-      tableName: [{ name: "Count" },{ name: "Product" },{ name: "Name" },{ name: "Price" },],
+      tableName: [{ name: "Count" },{ name: "Product" },{ name: "Name" },{ name: "Price" }],
       tableNameWithOutCol:[{name:'Quantity'},{name:''}]
     };
   },
