@@ -38,21 +38,9 @@ export default {
         { toDirection: "/Cart", text: "Cart" },
       ],
       dropDownItems: [
-        {
-          dropDirection: "/Setting",
-          dropClass: "far fa-envelope-open mr-1",
-          dropText: "Setting",
-        },
-        {
-          dropDirection: "/Message",
-          dropClass: "fas fa-cog mr-1",
-          dropText: "Message",
-        },
-        {
-          dropDirection: "/",
-          dropClass: "fa fa-sign-out mr-1",
-          dropText: "Log Out",
-        },
+        { dropDirection: "/Setting", dropClass: "far fa-envelope-open mr-1", dropText: "Setting",},
+        { dropDirection: "/Message", dropClass: "fas fa-cog mr-1", dropText: "Message",},
+        { dropDirection: "/", dropClass: "fa fa-sign-out mr-1", dropText: "Log Out",},
       ],
     };
   },
