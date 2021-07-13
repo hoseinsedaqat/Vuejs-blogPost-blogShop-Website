@@ -53,7 +53,7 @@
                 type="text"
                 class="form-control"
                 placeholder="Message"
-                value=" Hello erlich whats u My Man?"
+                value=" Hello erlich whats u My Man? "
               />
               <div class="input-group-append">
                 <button class="input-group-text bg-dark text-white" id="basic-addon2">
