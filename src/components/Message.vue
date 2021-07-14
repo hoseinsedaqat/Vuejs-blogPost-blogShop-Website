@@ -3,7 +3,7 @@
     <!-- Simple chat UI for Taraning -->
     <app-header></app-header>
     <div class="container">
-      <h3 class="mt-3 ml-2">Message:</h3>
+      <h3 class="mt-3 ml-2"> Message:</h3>
       <div class="row no-gutters">
         <div class="col-md-4 mt-3">
           <div class="card">
