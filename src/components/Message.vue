@@ -32,7 +32,7 @@
         <div class="col-md-8 mt-3">
           <div class="card">
             <div class="card-header d-flex flex-row justify-content-between">
-              <p class="p-1">Messages for Erlich</p>
+              <p class="p-1"> Messages for Erlich</p>
               <img
                 src="../assets/43a7d61519ec8605f47b32e45f62a813.jpg"
                 width="40"
