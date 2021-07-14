@@ -57,7 +57,7 @@
               />
               <div class="input-group-append">
                 <button class="input-group-text bg-dark text-white" id="basic-addon2">
-                  Send
+                   Send
                 </button>
               </div>
             </div>
