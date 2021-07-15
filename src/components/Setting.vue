@@ -14,7 +14,7 @@
               <h3>Setting Pages:</h3>
               <p>Allow register Your Data For Better Help In Chosses for You:</p>
               <div class="form-group">
-                <input type="radio" name checked /> Yes
+                <input type="radio" na checked /> Yes
               </div>
               <div class="form-group"><input type="radio" name="" id="" /> No</div>
               <!-- Another Setting -->
