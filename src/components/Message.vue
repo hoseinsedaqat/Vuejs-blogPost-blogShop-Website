@@ -42,7 +42,6 @@
             </div>
             <textarea
               name="message"
-              id=""
               cols="30"
               rows="13"
               class="form-control"
