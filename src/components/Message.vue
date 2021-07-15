@@ -7,7 +7,7 @@
       <div class="row no-gutters">
         <div class="col-md-4 mt-3">
           <div class="card">
-            <div class="card-header p-4">5 Contact</div>
+            <div class="card-header p-4"> 5 Contact </div>
             <ul class="list-group">
               <li
                 class="list-group-item m-0 d-flex flex-row justify-content-between p-3"
