@@ -16,7 +16,7 @@
               <div class="form-group">
                 <input type="radio" checked /> Yes
               </div>
-              <div class="form-group"><input type="radio" name=/> No</div>
+              <div class="form-group"><input type="radio" nam/> No</div>
               <!-- Another Setting -->
               <p>Perfer Save your Data:</p>
               <div class="form-group"><input type="radio" name="" id="" /> Yes</div>
