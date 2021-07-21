@@ -21,7 +21,7 @@
               <p>Perfer Save your Data:</p>
               <div class="form-group"><input type="radio"/> Yes</div>
               <div class="form-group">
-                <input type="radio" namchecked /> No
+                <input type="radio" nachecked /> No
               </div>
             </div>
           </div>
