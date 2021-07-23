@@ -9,7 +9,7 @@ import Vuerouter from 'vue-router';
 import BootstrapVue from 'bootstrap-vue';
 
 // Import Bootstarp for Use in All Component (Global)
-import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 // Import Router Folder
