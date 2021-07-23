@@ -3,7 +3,7 @@ import Vue from 'vue';
 import App from './App.vue';
 
 // Vue-Router
-import Vuerouter from 'vue-router'
+import Vuerouter from 'vue-router';
 
 // UI-BootstrapVue Added
 import BootstrapVue from 'bootstrap-vue'
