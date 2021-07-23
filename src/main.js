@@ -1,5 +1,5 @@
 // Main Vue App
-import Vue from 'vue'
+import Vue from 'vue';
 import App from './App.vue'
 
 // Vue-Router
