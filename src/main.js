@@ -30,7 +30,7 @@ const routers = new Vuerouter({
   mode: 'history',
 });
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 // Render Main App-Vuex-VueRouter
 new Vue({
