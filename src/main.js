@@ -16,7 +16,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 import { router } from './Router/router.js';
 
 // Import Vuex Folder
-import { store } from './Store/store.js'
+import { store } from './Store/store.js';
 
 // Uses Bootsratp Vue
 Vue.use(BootstrapVue)
