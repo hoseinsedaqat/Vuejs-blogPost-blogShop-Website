@@ -19,7 +19,7 @@ import { router } from './Router/router.js';
 import { store } from './Store/store.js';
 
 // Uses Bootsratp Vue
-Vue.use(BootstrapVue)
+Vue.use(BootstrapVue);
 
 // Use VueRouter
 Vue.use(Vuerouter)
