@@ -13,7 +13,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 
 // Import Router Folder
-import { router } from './Router/router.js'
+import { router } from './Router/router.js';
 
 // Import Vuex Folder
 import { store } from './Store/store.js'
