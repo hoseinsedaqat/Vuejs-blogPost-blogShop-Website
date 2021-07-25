@@ -22,7 +22,7 @@ import { store } from './Store/store.js';
 Vue.use(BootstrapVue);
 
 // Use VueRouter
-Vue.use(Vuerouter)
+Vue.use(Vuerouter);
 
 const routers = new Vuerouter({
   routes: router,
