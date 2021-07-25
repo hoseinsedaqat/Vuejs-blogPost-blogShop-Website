@@ -28,7 +28,7 @@ const routers = new Vuerouter({
   routes: router,
   // Chnage Mode
   mode: 'history',
-})
+});
 
 Vue.config.productionTip = false
 
