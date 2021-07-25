@@ -10,7 +10,7 @@ import BootstrapVue from 'bootstrap-vue';
 
 // Import Bootstarp for Use in All Component (Global)
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css';
 
 // Import Router Folder
 import { router } from './Router/router.js'
