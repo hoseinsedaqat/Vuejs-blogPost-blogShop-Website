@@ -1,4 +1,4 @@
-import Home from '../components/Home.vue'
+import Home from '../components/Home.vue';
 import Blog from '../components/Blog.vue'
 import Login from '../components/Login.vue'
 import ReadMore from '../components/ReadMore.vue'
