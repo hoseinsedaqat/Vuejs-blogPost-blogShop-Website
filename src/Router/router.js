@@ -4,7 +4,7 @@ import Login from '../components/Login.vue';
 import ReadMore from '../components/ReadMore.vue';
 import Shop from '../components/Shop.vue';
 import Cart from '../components/Cart.vue';
-import ReadMoreProduct from '../components/ReadMoreProduct.vue'
+import ReadMoreProduct from '../components/ReadMoreProduct.vue';
 import Setting from '../components/Setting.vue'
 import Message from '../components/Message.vue'
 import ErrorPage from '../components/ErrorPage.vue'
