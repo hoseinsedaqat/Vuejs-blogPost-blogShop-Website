@@ -7,7 +7,7 @@ import Cart from '../components/Cart.vue';
 import ReadMoreProduct from '../components/ReadMoreProduct.vue';
 import Setting from '../components/Setting.vue';
 import Message from '../components/Message.vue';
-import ErrorPage from '../components/ErrorPage.vue'
+import ErrorPage from '../components/ErrorPage.vue';
 
 
 export const router = [
