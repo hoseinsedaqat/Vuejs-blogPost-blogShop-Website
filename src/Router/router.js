@@ -22,4 +22,4 @@ export const router = [
     { path: '/Message', component: Message },
     // Error 404
     { path: '*', component: ErrorPage }
-];
+]
