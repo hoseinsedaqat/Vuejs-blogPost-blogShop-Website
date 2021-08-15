@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import Vue from 'vue';
 import Vuex from 'vuex'
 import data from '../data/data.js'
 import product from '../data/product.js'
